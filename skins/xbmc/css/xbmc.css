@@ -1,0 +1,718 @@
+/*************** Main link style ***************/
+#content a {
+	text-decoration: none;
+    /*color: #0645ad;*/
+    color: #403893;
+    font-weight: bold;
+}
+#right-navigation a {
+	text-decoration: none;
+	color: #1e1c6c;
+	font-weight: bold;
+}
+/* Using #content messed with our category links, so use #mw-content-article */
+/*
+#mw-content-article a:visited {
+	color: #0b0080;
+}
+*/
+#mw-content-article a:active {
+	color: #faa700;
+}
+#mw-content-article a:hover, #mw-content-article a:focus, #right-navigation a:hover, #right-navigation a:focus {
+	text-decoration: underline;
+}
+#mw-content-article a.new, #p-personal a.new, #right-navigation .new a {
+	color: #ba0000;
+}
+#mw-content-article a.new:visited, #p-personal a.new:visited {
+	color: #a55858;
+}
+
+#contentSub, #contentSub2 {
+	font-size: 84%;
+	line-height: 1.2em;
+	margin: 0 0 22px 18px;
+	color: #7D7D7D;
+	width: auto;
+}
+
+/*************** Paradise modifications ***************/
+#mw-content-article ul, #mw-content-article ol {
+	margin: .3em 0 0 1.5em;
+	padding: 0;
+	list-style-type: square;
+	list-style-image: url(../images/xbmc-bullet.png);
+	
+}
+.box {
+	border-top-right-radius: 0;
+	-moz-border-top-right-radius: 0;
+	-khtml-border-top-right-radius: 0;
+	-webkit-border-top-right-radius: 0;
+	position: relative;
+	z-index: 10;
+	/* padding-bottom: 0 !important; */
+}
+#f_sidebar .widget-container {
+	margin-right: 47px;
+	float: left;
+}
+#f_sidebar .footer-widget-last {
+	margin-right: 0;
+}
+h2, h3, h4, h5, h6 {
+	padding-top: 8px;
+}
+pre {
+	font-family: monospace, sans-serif !important;
+	color: black;
+	margin: 8px 0;
+	padding: 10x;
+	border: 1px dashed #2F6FAB;
+	background-color: #F9F9F9;
+	background-image: none;
+}
+#searchform input[type=text] {
+	color: #666666;
+}
+
+
+
+/*************** MediaWiki modifications ***************/
+fieldset {
+	border: 1px solid #CCCCCC;
+	margin: 10px 0;
+	padding: 0 10px 10px;
+}
+fieldset legend {
+	padding: 5px;
+}
+#wpTextbox1 {
+    width: 100%;
+    font-family: "Courier New", monospace;
+    font-size: 13px;
+    background: #ffffff;
+}
+textarea {
+    overflow-y: auto;
+}
+div.floatright {
+	margin-left: 10px;
+}
+div.floatleft {
+	margin-right: 10px;
+}
+
+
+/*************** Page tabs ***************/
+#right-navigation-wrapper {
+	width: 940px;
+	margin: 0 auto;
+	position: relative;
+}
+#right-navigation {
+	position: absolute;
+	z-index: 11; /* 1 above .box */
+	bottom: 0;
+	right: -21px; /* to offset .PageTitle's 20px padding, I think */
+}
+div.vectorTabs h5, div.vectorMenu h5 span {
+	display: none;
+}
+#p-namespaces, #p-views {
+	float: left;
+	background-image: url(../images/xbmc/tab-break.png);
+	background-position: bottom left;
+	background-repeat: no-repeat;
+	padding-left: 1px;
+}
+div.p-namespaces-has-friends {
+	margin-right: 50px;
+}
+div.vectorTabs, div.vectorMenu {
+	height: 30px;
+}
+div.vectorTabs ul {
+	height: 100%;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	float: left;
+}
+div.vectorTabs ul > li {
+	display: block;
+}
+div.vectorTabs ul li {
+	/*line-height: 1.125em;*/
+	display: inline block;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	background-image: url(../images/xbmc/tab-normal-fade.png);
+	background-position: bottom left;
+	background-repeat: repeat-x;
+	white-space: nowrap;
+	float: left;
+}
+div.vectorTabs li.selected {
+	background-image: url(../images/xbmc/tab-current-fade.png);
+}
+div.vectorTabs span {
+	display: inline-block;
+	background-image: url(../images/xbmc/tab-break.png);
+	background-position: bottom right;
+	background-repeat: no-repeat;
+	height: 100%;
+}
+div.vectorTabs li.selected a, div.vectorTabs li.selected a:visited {
+	color: #333;
+	text-decoration: none;
+}
+div.vectorTabs span > a {
+	float: left;
+	display: block;
+}
+div.vectorTabs span a {
+	display: inline-block;
+}
+div.vectorTabs li a {
+	display: inline-block;
+	height: 100%;
+	padding: 10px 8px 0;
+	cursor: pointer;
+	font-size: 95%;
+}
+div.vectorMenu {
+	float: left;
+	
+	/* Show an inactive background */
+	background-image: url(../images/xbmc/tab-normal-fade-arrow.png);
+	
+	background-position: bottom left;
+	background-repeat: no-repeat;
+	cursor: pointer;
+}
+div.vectorMenu:hover {
+	/* Show a highlighted background */
+	background-image: url(../images/xbmc/tab-current-fade-arrow.png);
+}
+#ca-watch:hover, #ca-unwatch:hover {
+	background-image: url(../images/xbmc/tab-current-fade.png);
+}
+div.vectorMenu > h5 {
+	background-image: none;
+}
+div.vectorMenu h5 {
+	height: 100%;
+	margin: 0 0 0 -1px;
+	padding: 0;
+	float: left;
+	background-image: url(../images/xbmc/tab-break.png);
+	background-position: bottom left;
+	background-repeat: no-repeat;
+}
+div.vectorMenu h5 > a {
+	display: block;
+}
+div.vectorMenu h5 a {
+	display: inline-block;
+	width: 24px;
+	height: 100%;
+	text-decoration: none;
+	background-image: url(../images/xbmc/tab-break.png);
+	background-position: bottom right;
+	background-repeat: no-repeat;
+}
+div.vectorMenu div.menu {
+	position: relative;
+	display: none;
+	clear: both;
+	text-align: left;
+}
+div.vectorMenu ul {
+	position: absolute;
+	right: 0;
+	background-color: #ffffff;
+	border: solid 1px #dedfe3; /* A tad bit darker than the .box border (about #e5e6e8 on average) */
+	list-style: none;
+	list-style-image: none;
+	list-style-type: none;
+	padding: 0;
+	margin: -1px 0 0; /* To overlap the border with the menu border */
+	margin-left: -1px;
+	test-align: left;
+}
+div.vectorMenu li {
+	margin: 0;
+	padding: 0;
+	text-align: left;
+	line-height: 1em;
+}
+div.vectorMenu li > a {
+	display: block;
+}
+div.vectorMenu li a {
+	display: inline-block;
+	width: 100%;
+	height: 100%;
+	padding: 8px 22px;
+	white-space: nowrap;
+	cursor: pointer;
+	font-size: 95%;
+}
+div.vectorMenu li:hover {
+	background-color: #eeeeee;
+}
+/* Enable forcing showing of the menu for accessibility */
+div.vectorMenu:hover div.menu, div.vectorMenu div.menuForceShow {
+	display: block;
+}
+
+
+/*************** Watch/unwatch icon styling ***************/
+#ca-unwatch.icon a,
+#ca-watch.icon a {
+	margin: 0;
+	padding: 0;
+	outline: none;
+	display: block;
+	width: 26px;
+	/* This hides the text but shows the background image */
+	padding-top: 34px;
+	margin-top: 0;
+	/* Only applied in IE6 */
+	margin-top: -0.8em !ie;
+	height: 0;
+	overflow: hidden;
+	/* @embed */
+	background-image: url(../images/xbmc/watch-icons.png);
+	background-repeat: no-repeat;
+}
+#ca-unwatch.icon a {
+	background-position: -43px 60%;
+}
+#ca-watch.icon a {
+	background-position: 5px 60%;
+}
+#ca-unwatch.icon a:hover,
+#ca-unwatch.icon a:focus {
+	background-position: -67px 60%;
+}
+#ca-watch.icon a:hover,
+#ca-watch.icon a:focus {
+	background-position: -19px 60%;
+}
+#ca-unwatch.icon a.loading,
+#ca-watch.icon a.loading {
+	/* @embed */
+	background-image: url(../images/xbmc/watch-icon-loading.gif);
+	background-position: 5px 60%;
+}
+#ca-unwatch.icon a span,
+#ca-watch.icon a span {
+	display: none;
+}
+
+
+/*************** Breadcrumb menu styling ***************/
+#breadcrumbs {
+	width: 978px; /* 1px missing on either side so that it doesn't shimmer out from behind the main menu */
+	margin-top: -50px; /* This gets animated to -25px */
+	padding: 0 !important;
+	position: relative;
+}
+/* Modify default paradise style */
+#breadcrumbs li {
+    background: none;
+}
+#mw-panel {
+	width: 100%;
+	height: 25px;
+	padding-top: 28px; /* 5 (padding) + 24 (#mw-panel2 height) - 1 (to overlap #mw-panel's bottom border */
+	z-index: 3;
+}
+#mw-panel2 {
+	width: 100%;
+	height: 24px;
+	position: absolute;
+	top: 0;
+	left: -1px; /* why is this needed? */
+	padding-top: 3px;
+	z-index: 4;
+	background-color: #f0f4f7;
+	border: 1px solid #C0C0C0;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+	-moz-border-bottom-left-radius: 5px;
+	-moz-border-bottom-right-radius: 5px;
+	-khtml-border-bottom-left-radius: 5px;
+	-khtml-border-bottom-right-radius: 5px;
+	-webkit-border-bottom-left-radius: 5px;
+	-webkit-border-bottom-right-radius: 5px;
+}
+#mw-panel2 a, #nav-control-panel a {
+	color: #4f4f4f !important; /* To override the links to the person's user page */
+}
+#mw-panel2 a:hover, #nav-control-panel a:hover {
+	color: #000000 !important;
+}
+#breadcrumbs a:hover {
+	text-decoration: underline;
+}
+#breadcrumbs table {
+	table-layout: fixed;
+	border-spacing: 0;
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+#breadcrumbs td {
+	margin: 0;
+	padding: 0;
+}
+#mw-panel td {
+	background: url(../images/xbmc/breadcrumb_separator.png) no-repeat right center;
+}
+#mw-panel2 td {
+	background: url(../images/xbmc/breadcrumb_separator-dark.png) no-repeat right center;
+}
+#mw-panel2 td.breadcrumb-personal-last, #nav-createaccount {
+	background-image: none !important;
+}
+#mw-panel td.breadcrumb-nav-last {
+	position: relative;
+	z-index: 5;
+	background: url(../images/xbmc/breadcrumb-cp-left.png) no-repeat right bottom;
+}
+#nav-control-panel {
+	background: #f0f4f7 !important;
+}
+#nav-logout {
+	position: relative;
+	background: url(../images/xbmc/breadcrumb-cp-right.png) no-repeat left bottom;
+	z-index: 5;
+}
+#breadcrumbs td a {
+	display: block;
+	width: 100%;
+	height: 100%;
+	padding-top: 6px;
+	text-align: center;
+}
+#nav-control-panel {
+	position: relative;
+	z-index: 5;
+}
+#nav-control-panel a span {
+	padding-right: 18px;
+	background-repeat: no-repeat;
+	background-position: right center;
+}
+.control-button-down {
+	background-image: url(../images/xbmc/arrow-down.png);
+}
+.control-button-up {
+	background-image: url(../images/xbmc/arrow-up.png);
+}
+/*
+#nav-control-panel a {
+	background: #616770 url(../images/xbmc/breadcrumb-cp-right.png) no-repeat left center;
+}
+*/
+#nav-logout {
+	background: url(../images/xbmc/breadcrumb-cp-right.png) no-repeat left bottom !important;
+}
+
+
+/*************** Footer statistics ***************/
+#mw-footer {
+	margin-bottom: -20px;
+}
+#mw-footer ul {
+	clear: both;
+	list-style: none;
+	margin: 0;
+	padding: 35px 0 0;
+	width: 100%;
+}
+#mw-footer ul > li {
+	display: block;
+}
+#mw-footer ul li {
+	display: inline block;
+	margin: 0;
+	padding: 0;
+	font-size: 94%;
+	font-weight: bold;
+}
+#mw-footer-info-lastmod {
+	float: left;
+}
+#mw-footer-info-viewcount {
+	float: right;
+}
+/* Forms */
+#editform, #mw-upload-form, #mw-history-compare {
+	padding-bottom: 60px;
+}
+#editpage-copywarn {
+	font-size: 95%;
+}
+
+
+
+/*************** Table of contents ***************/
+#toc,
+.toc {
+	padding-right: 18px;
+	padding-bottom: 10px;
+	font-size: 95%;
+	float: left;
+}
+#toc h2,
+.toc h2 {
+	display: inline;
+	border: none;
+	padding: 0;
+	font-size: 150%;
+}
+span.toctoggle {
+	display: none;
+}
+#toc #toctitle,
+.toc #toctitle,
+#toc .toctitle,
+.toc .toctitle {
+	text-align: center;
+}
+#toc ul,
+.toc ul {
+	list-style-type: none;
+	list-style-image: none;
+	margin-left: 0;
+	padding-left: 0;
+	text-align: left;
+}
+#toc ul ul,
+.toc ul ul {
+	margin: 0 0 0 20px;
+}
+#toc .toctoggle,
+.toc .toctoggle {
+	font-size: 94%;
+}
+#toc li a,
+.toc li a {
+	border-bottom: 1px dashed #C7C7C7;
+}
+
+
+
+
+/*************** Category links ***************/
+#xbmc-catlinks {
+	width: 940px;
+	height: 24px;
+	margin-top: 35px;
+	float: left;
+	position: relative;
+	font-size: 8pt;
+}
+#catlinks-wrapper {
+	height: 100%;
+	position: relative;
+	float: left;
+	left: 50%;
+}
+#xbmc-catlinks ul {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	position: relative;
+	float: left;
+	left: -50%;
+	list-style: none;
+	background: url(../images/main_nav_px.gif) top repeat-x #e7e7e7;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-khtml-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+	-moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+	-webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+}
+#xbmc-catlinks li {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	display: block;
+	position: relative;
+	float: left;
+	font-family: Arial, Helvetica, sans-serif;
+}
+#xbmc-catlinks .categories-link, #xbmc-catlinks .add-category {
+	background: url(../images/grey_grad.gif) top repeat-x #363A3E;
+}
+#xbmc-catlinks, .categories-link {
+	border-radius: 5px 0 0 5px;
+	-moz-border-radius: 5px 0 0 5px;
+	-khtml-border-radius: 5px 0 0 5px;
+	-webkit-border-top-left-radius: 5px;
+	-webkit-border-bottom-left-radius: 5px;
+}
+#xbmc-catlinks .add-category {
+	border-radius: 0 5px 5px 0;
+	-moz-border-radius: 0 5px 5px 0;
+	-khtml-border-radius: 0 5px 5px 0;
+	-webkit-border-top-right-radius: 5px;
+	-webkit-border-bottom-right-radius: 5px;
+}
+#xbmc-catlinks a, #xbmc-catlinks .categories-none span {
+	display: block;
+	width: 100%;
+	height: 100%;
+	padding: 3px 10px 0;
+	position: relative;
+	color: #000000;
+}
+#xbmc-catlinks a:hover {
+	text-decoration: underline;
+}
+#xbmc-catlinks .categories-link a, #xbmc-catlinks .add-category a {
+	color: #ffffff;
+}
+#xbmc-catlinks .categories-none span {
+	font-style: italic;
+}
+
+/*
+#xbmc-catlinks a {
+	display: block;
+	width: 100%;
+	height: 100%;
+	padding: 3px 16px 0;
+	position: relative;
+	font-size: 9pt;
+}
+#xbmc-catlinks li a {
+	color: #232323;
+	font-size: 9pt;
+	text-decoration: none;
+}
+.categories-link a, .add-category a {
+	color: #ffffff !important;
+	text-decoration: none;
+}
+#xbmc-catlinks li.add-category a {
+	font-size: 14px !important;
+}
+#xbmc-catlinks a:hover {
+	text-decoration: underline;
+}
+.add-category a:hover {
+	text-decoration: none !important;
+}
+*/
+
+/*************** Special page fixes ***************/
+body.ns-special #content a {
+	text-decoration: none;
+    color: #403893;
+    font-weight: bold;
+}
+body.ns-special #content a:active {
+	color: #faa700;
+}
+body.ns-special #content a:hover, body.ns-special #content a:focus {
+	text-decoration: underline;
+}
+body.ns-special #content a.new {
+	color: #ba0000;
+}
+body.ns-special #content a.new:visited, body.ns-special #content a.new:visited {
+	color: #a55858;
+}
+.namespaceoptions #nsselect #namespace, input.mw-htmlform-submit,
+#mw-userrights-form1, table.mw-recentchanges-table, #specialfilepath,
+#specialmimesearch, #fileduplicatesearch, #mw-linksearch-form, #powersearch,
+#mw-import-table, body.mw-special-Whatlinkshere #content form,
+body.mw-special-Undelete #content form, #mw-pages {
+	margin-bottom: 20px;
+}
+#mw-pages .mw-content-ltr ul {
+	padding-bottom: 20px;
+}
+table.mw-statistics-table {
+	width: 60%;
+	margin: 20px auto;
+}
+
+
+
+/*************** Preferences ***************/
+#mw-prefs-form {
+	width: 100%;
+	position: relative;
+	margin: 0;
+	padding: 0 0 20px;
+}
+#preftoc {
+	position: relative;
+	float: left;
+	left: 50%;
+	margin: 0 !important;
+	padding: 0 !important;
+	list-style: none !important;
+}
+#preftoc li {
+	position: relative;
+	float: left;
+	left: -50%;
+	margin: 0;
+	padding: 0;
+}
+#preftoc li a {
+	display: block;
+	padding: 8px 10px;
+	font-size: 110%;
+}
+#preferences {
+	display: relative;
+	float: left;
+	width: 100%;
+	margin: 0;
+	clear: both;
+}
+fieldset.prefsection {
+	border: none;
+}
+#preferences fieldset.prefsection legend.mainLegend {
+	display:  none;
+}
+#preferences fieldset.prefsection fieldset {
+	border: none;
+	border-top: solid 1px #CCC;
+	margin: 40px 0;
+	padding: 0 40px;
+}
+#preferences legend {
+	font-color: #333333;
+}
+.prefsection table {
+	width: 100%;
+}
+#preferences td {
+	padding: 0 8px;
+}
+#preferences td.htmlform-tip {
+	font-size: x-small;
+	padding: 2px 2x;
+	color: #666666;
+}
+
+
+
+
